@@ -41,7 +41,6 @@ public class SingleTest extends BrowserStackTestNGTest {
         driver.findElement(By.cssSelector("input#provinceInput")).sendKeys("Leinster" + Keys.ENTER);
         driver.findElement(By.cssSelector("input#postCodeInput")).sendKeys("EIRCODE" + Keys.ENTER);
         Thread.sleep(1000);
-        driver.findElement(By.cssSelector("button")).click();
 
         // Confirm and Assert
         System.out.println("Cormac");
