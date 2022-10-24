@@ -1,12 +1,28 @@
 pipeline {
-   agent any
-   stages {
-      stage('setup') {
-         steps {
-            browserstack(credentialsId: 'dw471drf-db68-4r23b-969d-24r3r32f') {
-               echo "hello"
-            }
-         }
-      }
-    }
-  }
+	agent any
+	tools{
+	}
+	stages {
+		stage("setup"){
+			steps {
+				browserstack(credntialsId: '50e72f61-f2da-4397-b6cb-92e537654425'){
+				}
+				// Enable reporting in Jenkins
+            			browserStackReportPublisher 'automate'
+			}
+		}
+		stage("test"){
+			steps {
+				echo 'Running the application'
+				maven('Maven') {
+				sh 'mvn test -P sample-test'
+				}
+			}
+		}
+		stage("deploy"){
+			steps {
+				echo 'No application to deploy, this is just for running tests'
+			}
+		}
+	}
+}
