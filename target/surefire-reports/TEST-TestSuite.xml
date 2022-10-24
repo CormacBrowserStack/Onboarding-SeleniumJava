@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="TestSuite" time="15.926" tests="4" errors="0" skipped="0" failures="4">
+  <properties>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="java.vm.version" value="11.0.12+7"/>
+    <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/microsoft-11.jdk/Contents/Home/lib"/>
+    <property name="gopherProxySet" value="false"/>
+    <property name="maven.multiModuleProjectDirectory" value="/Users/cormac/testng-browserstack"/>
+    <property name="java.vm.vendor" value="Microsoft"/>
+    <property name="java.vendor.url" value="https://www.microsoft.com"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="path.separator" value=":"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="user.country" value="IE"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="/Users/cormac/testng-browserstack"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="java.runtime.version" value="11.0.12+7"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment"/>
+    <property name="os.arch" value="x86_64"/>
+    <property name="java.io.tmpdir" value="/var/folders/9s/5wxqjnr57011hydnj_ps_97r0000gq/T/"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="classworlds.conf" value="/opt/homebrew/Cellar/maven/3.8.6/libexec/bin/m2.conf"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/Users/cormac/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="maven.conf" value="/opt/homebrew/Cellar/maven/3.8.6/libexec/conf"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="java.class.version" value="55.0"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="11.5"/>
+    <property name="library.jansi.path" value="/opt/homebrew/Cellar/maven/3.8.6/libexec/lib/jansi-native"/>
+    <property name="user.home" value="/Users/cormac"/>
+    <property name="user.timezone" value="Europe/Dublin"/>
+    <property name="java.awt.printerjob" value="sun.lwawt.macosx.CPrinterJob"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.specification.version" value="11"/>
+    <property name="user.name" value="cormac"/>
+    <property name="java.class.path" value="/opt/homebrew/Cellar/maven/3.8.6/libexec/boot/plexus-classworlds-2.6.0.jar"/>
+    <property name="java.vm.specification.version" value="11"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher test -P parallel"/>
+    <property name="java.home" value="/Library/Java/JavaVirtualMachines/microsoft-11.jdk/Contents/Home"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="11.0.12"/>
+    <property name="java.vendor" value="Microsoft"/>
+    <property name="maven.home" value="/opt/homebrew/Cellar/maven/3.8.6/libexec"/>
+    <property name="file.separator" value="/"/>
+    <property name="java.version.date" value="2021-07-20"/>
+    <property name="java.vendor.url.bug" value="https://github.com/microsoft/openjdk/issues"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="java.vendor.version" value="Microsoft-25199"/>
+    <property name="sun.cpu.isalist" value=""/>
+  </properties>
+  <testcase name="test" classname="com.browserstack.SingleTest" time="15.926">
+    <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;/html//legend[@id=&apos;confirmation-message&apos;]&quot;}&#10;  (Session info: chrome=106.0.5249.61)&#10;For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element&#10;Build info: version: &apos;4.1.0&apos;, revision: &apos;87802e897b&apos;&#10;System info: host: &apos;Cormac*con-PQ2FTJX76V&apos;, ip: &apos;2a02:8084:2001:f900:a9c6:ce8b:f047:7ad9%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;11.5&apos;, java.version: &apos;11.0.12&apos;&#10;Driver info: org.openqa.selenium.remote.RemoteWebDriver&#10;Command: [97174d72e204b5348761318960e5f19a1558009d, findElement {using=xpath, value=/html//legend[@id=&apos;confirmation-message&apos;]}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 106.0.5249.61, chrome: {chromedriverVersion: 106.0.5249.21 (71f4e2c9a6f3..., userDataDir: /var/folders/yj/h3bj394n2tn...}, goog:chromeOptions: {debuggerAddress: localhost:63355}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: 97174d72e204b5348761318960e...}&#10;Session ID: 97174d72e204b5348761318960e5f19a1558009d" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"/html//legend[@id='confirmation-message']"}
+  (Session info: chrome=106.0.5249.61)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.1.0', revision: '87802e897b'
+System info: host: 'Cormac*con-PQ2FTJX76V', ip: '2a02:8084:2001:f900:a9c6:ce8b:f047:7ad9%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '11.5', java.version: '11.0.12'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [97174d72e204b5348761318960e5f19a1558009d, findElement {using=xpath, value=/html//legend[@id='confirmation-message']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 106.0.5249.61, chrome: {chromedriverVersion: 106.0.5249.21 (71f4e2c9a6f3..., userDataDir: /var/folders/yj/h3bj394n2tn...}, goog:chromeOptions: {debuggerAddress: localhost:63355}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: 97174d72e204b5348761318960e...}
+Session ID: 97174d72e204b5348761318960e5f19a1558009d
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:50)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:383)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:375)
+	at com.browserstack.SingleTest.test(SingleTest.java:47)
+</failure>
+    <system-out><![CDATA[Cormac
+]]></system-out>
+    <system-err><![CDATA[Oct 24, 2022 12:07:25 P.M. org.openqa.selenium.remote.tracing.opentelemetry.OpenTelemetryTracer createTracer
+INFO: Using OpenTelemetry for tracing
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+Oct 24, 2022 12:07:30 P.M. org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Oct 24, 2022 12:07:34 P.M. org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Oct 24, 2022 12:07:34 P.M. org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Oct 24, 2022 12:07:38 P.M. org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="test" classname="com.browserstack.SingleTest" time="19.526">
+    <failure message="For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element&#10;Build info: version: &apos;4.1.0&apos;, revision: &apos;87802e897b&apos;&#10;System info: host: &apos;Cormac*con-PQ2FTJX76V&apos;, ip: &apos;2a02:8084:2001:f900:a9c6:ce8b:f047:7ad9%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;11.5&apos;, java.version: &apos;11.0.12&apos;&#10;Driver info: org.openqa.selenium.remote.RemoteWebDriver&#10;Command: [9f0519fc49bccb1d95e11f3a7ae0a6a450f2f1bf, findElement {using=xpath, value=/html//legend[@id=&apos;confirmation-message&apos;]}]&#10;Capabilities {acceptInsecureCerts: false, browserName: Safari, browserVersion: 15.6.1, javascriptEnabled: true, platform: MAC, platformName: MAC, safari:automaticInspection: false, safari:automaticProfiling: false, safari:diagnose: false, safari:platformBuildVersion: 21G83, safari:platformVersion: 12.5.1, safari:useSimulator: false, setWindowRect: true, strictFileInteractability: false, webdriver.remote.sessionid: 9f0519fc49bccb1d95e11f3a7ae..., webkit:WebRTC: {DisableICECandidateFiltering: false, DisableInsecureMediaCapture: false}}&#10;Session ID: 9f0519fc49bccb1d95e11f3a7ae0a6a450f2f1bf" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.1.0', revision: '87802e897b'
+System info: host: 'Cormac*con-PQ2FTJX76V', ip: '2a02:8084:2001:f900:a9c6:ce8b:f047:7ad9%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '11.5', java.version: '11.0.12'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [9f0519fc49bccb1d95e11f3a7ae0a6a450f2f1bf, findElement {using=xpath, value=/html//legend[@id='confirmation-message']}]
+Capabilities {acceptInsecureCerts: false, browserName: Safari, browserVersion: 15.6.1, javascriptEnabled: true, platform: MAC, platformName: MAC, safari:automaticInspection: false, safari:automaticProfiling: false, safari:diagnose: false, safari:platformBuildVersion: 21G83, safari:platformVersion: 12.5.1, safari:useSimulator: false, setWindowRect: true, strictFileInteractability: false, webdriver.remote.sessionid: 9f0519fc49bccb1d95e11f3a7ae..., webkit:WebRTC: {DisableICECandidateFiltering: false, DisableInsecureMediaCapture: false}}
+Session ID: 9f0519fc49bccb1d95e11f3a7ae0a6a450f2f1bf
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:50)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:383)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:375)
+	at com.browserstack.SingleTest.test(SingleTest.java:47)
+</failure>
+    <system-out><![CDATA[Cormac
+Cormac
+]]></system-out>
+  </testcase>
+  <testcase name="test" classname="com.browserstack.SingleTest" time="20.769">
+    <failure message="Unable to locate element: /html//legend[@id=&apos;confirmation-message&apos;]&#10;For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element&#10;Build info: version: &apos;4.1.0&apos;, revision: &apos;87802e897b&apos;&#10;System info: host: &apos;Cormac*con-PQ2FTJX76V&apos;, ip: &apos;2a02:8084:2001:f900:a9c6:ce8b:f047:7ad9%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;11.5&apos;, java.version: &apos;11.0.12&apos;&#10;Driver info: org.openqa.selenium.remote.RemoteWebDriver&#10;Command: [5ee73078a3b53aacd76388aff6910ca88a18cc02, findElement {using=xpath, value=/html//legend[@id=&apos;confirmation-message&apos;]}]&#10;Capabilities {acceptInsecureCerts: false, browserName: firefox, browserVersion: 105.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20220915150737, moz:geckodriverVersion: 0.31.0, moz:headless: false, moz:platformVersion: 18.7.0, moz:processID: 48030, moz:profile: /var/folders/yj/h3bj394n2tn..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webdriver.remote.sessionid: 5ee73078a3b53aacd76388aff69...}&#10;Session ID: 5ee73078a3b53aacd76388aff6910ca88a18cc02" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: Unable to locate element: /html//legend[@id='confirmation-message']
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.1.0', revision: '87802e897b'
+System info: host: 'Cormac*con-PQ2FTJX76V', ip: '2a02:8084:2001:f900:a9c6:ce8b:f047:7ad9%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '11.5', java.version: '11.0.12'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [5ee73078a3b53aacd76388aff6910ca88a18cc02, findElement {using=xpath, value=/html//legend[@id='confirmation-message']}]
+Capabilities {acceptInsecureCerts: false, browserName: firefox, browserVersion: 105.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20220915150737, moz:geckodriverVersion: 0.31.0, moz:headless: false, moz:platformVersion: 18.7.0, moz:processID: 48030, moz:profile: /var/folders/yj/h3bj394n2tn..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webdriver.remote.sessionid: 5ee73078a3b53aacd76388aff69...}
+Session ID: 5ee73078a3b53aacd76388aff6910ca88a18cc02
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:50)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:383)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:375)
+	at com.browserstack.SingleTest.test(SingleTest.java:47)
+</failure>
+    <system-out><![CDATA[Cormac
+]]></system-out>
+  </testcase>
+  <testcase name="test" classname="com.browserstack.SingleTest" time="33.282">
+    <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;/html//legend[@id=&apos;confirmation-message&apos;]&quot;}&#10;  (Session info: MicrosoftEdge=106.0.1370.37)&#10;For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element&#10;Build info: version: &apos;4.1.0&apos;, revision: &apos;87802e897b&apos;&#10;System info: host: &apos;Cormac*con-PQ2FTJX76V&apos;, ip: &apos;2a02:8084:2001:f900:a9c6:ce8b:f047:7ad9%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;11.5&apos;, java.version: &apos;11.0.12&apos;&#10;Driver info: org.openqa.selenium.remote.RemoteWebDriver&#10;Command: [8cd1a19134d3594dfbfdc8492590ffd7b90cea8a, findElement {using=xpath, value=/html//legend[@id=&apos;confirmation-message&apos;]}]&#10;Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 106.0.1370.37, javascriptEnabled: true, ms:edgeOptions: {debuggerAddress: localhost:1712}, msedge: {msedgedriverVersion: 106.0.1370.37 (7c71c663052f..., userDataDir: C:\Windows\proxy\scoped_dir...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: 8cd1a19134d3594dfbfdc849259...}&#10;Session ID: 8cd1a19134d3594dfbfdc8492590ffd7b90cea8a" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"/html//legend[@id='confirmation-message']"}
+  (Session info: MicrosoftEdge=106.0.1370.37)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.1.0', revision: '87802e897b'
+System info: host: 'Cormac*con-PQ2FTJX76V', ip: '2a02:8084:2001:f900:a9c6:ce8b:f047:7ad9%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '11.5', java.version: '11.0.12'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [8cd1a19134d3594dfbfdc8492590ffd7b90cea8a, findElement {using=xpath, value=/html//legend[@id='confirmation-message']}]
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 106.0.1370.37, javascriptEnabled: true, ms:edgeOptions: {debuggerAddress: localhost:1712}, msedge: {msedgedriverVersion: 106.0.1370.37 (7c71c663052f..., userDataDir: C:\Windows\proxy\scoped_dir...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: 8cd1a19134d3594dfbfdc849259...}
+Session ID: 8cd1a19134d3594dfbfdc8492590ffd7b90cea8a
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:50)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:383)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:375)
+	at com.browserstack.SingleTest.test(SingleTest.java:47)
+</failure>
+  </testcase>
+</testsuite>
