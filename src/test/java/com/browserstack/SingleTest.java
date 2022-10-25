@@ -51,6 +51,8 @@ public class SingleTest extends BrowserStackTestNGTest {
             jse.executeScript("browserstack_executor: {\"action\": \"setSessionStatus\", \"arguments\": {\"status\": \"failed\", \"reason\": \"Confirmation message doesn't match\"}}");
         }
 
+        // Adding a comment to see if it notices the changes
+
         Assert.assertEquals("Your Order has been successfully placed.", placed);
         Thread.sleep(1000);
         //Exit runtime
