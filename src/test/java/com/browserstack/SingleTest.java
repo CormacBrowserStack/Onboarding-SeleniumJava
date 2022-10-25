@@ -42,9 +42,9 @@ public class SingleTest extends BrowserStackTestNGTest {
         driver.findElement(By.cssSelector("input#postCodeInput")).sendKeys("EIRCODE" + Keys.ENTER);
         Thread.sleep(1000);
 
-        // Confirm and Assert
-        String placed = driver.findElement(By.cssSelector("legend#confirmation-message")).getText();
 
+        // Define Test Status based on if statement
+        String placed = driver.findElement(By.cssSelector("legend#confirmation-message")).getText();
         if (placed.equals("Your Order has been successfully placed.")){
             jse.executeScript("browserstack_executor: {\"action\": \"setSessionStatus\", \"arguments\": {\"status\": \"<passed>\", \"reason\": \"Confirmation message matches\"}}");
         } else {
