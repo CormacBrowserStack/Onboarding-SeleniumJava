@@ -43,22 +43,18 @@ public class SingleTest extends BrowserStackTestNGTest {
         Thread.sleep(1000);
 
         // Confirm and Assert
-        System.out.println("Cormac");
         String placed = driver.findElement(By.cssSelector("legend#confirmation-message")).getText();
 
-        if (placed.eq("Your Order has been successfully placed.", placed)){
-            jse.executeScript("browserstack_executor: {\"action\": \"setSessionStatus\", \"arguments\": {\"status\": \"<passed>\", \"reason\": \"Confirmation message matches"\}}");
-        }
-        else {
+        if (placed.equals("Your Order has been successfully placed.")){
+            jse.executeScript("browserstack_executor: {\"action\": \"setSessionStatus\", \"arguments\": {\"status\": \"<passed>\", \"reason\": \"Confirmation message matches\"}}");
+        } else {
             jse.executeScript("browserstack_executor: {\"action\": \"setSessionStatus\", \"arguments\": {\"status\": \"failed\", \"reason\": \"Confirmation message doesn't match\"}}");
         }
-
-
-        Thread.sleep(10000);
 
         Assert.assertEquals("Your Order has been successfully placed.", placed);
         Thread.sleep(1000);
         //Exit runtime
         driver.quit();
+
     }
 }
