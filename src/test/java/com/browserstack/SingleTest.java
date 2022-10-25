@@ -9,7 +9,7 @@ import org.openqa.selenium.WebElement;
 import org.testng.annotations.Test;
 
 public class SingleTest extends BrowserStackTestNGTest {
-    JavascriptExecutor jse = (JavascriptExecutor)driver;
+
     @Test
     public void test() throws Exception {
     	  // navigate to bstackdemo
@@ -45,11 +45,14 @@ public class SingleTest extends BrowserStackTestNGTest {
 
         // Define Test Status based on if statement
         String placed = driver.findElement(By.cssSelector("legend#confirmation-message")).getText();
-        if (placed.equals("Your Order has been successfully placed.")){
-            jse.executeScript("browserstack_executor: {\"action\": \"setSessionStatus\", \"arguments\": {\"status\": \"passed\", \"reason\": \"Confirmation message matches\"}}");
-        } else {
-            jse.executeScript("browserstack_executor: {\"action\": \"setSessionStatus\", \"arguments\": {\"status\": \"failed\", \"reason\": \"Confirmation message doesn't match\"}}");
-        }
+
+//        JavascriptExecutor jse = (JavascriptExecutor)driver;
+//
+//        if (placed.equals("Your Order has been successfully placed.")) {
+//            jse.executeScript("browserstack_executor: {\"action\": \"setSessionStatus\", \"arguments\": {\"status\": \"passed\", \"reason\": \"Confirmation message is correct\"}}");
+//        } else {
+//            jse.executeScript("browserstack_executor: {\"action\": \"setSessionStatus\", \"arguments\": {\"status\": \"failed\", \"reason\": \"Confirmation message doesn't match\"}}");
+//        }
 
         Thread.sleep(1000);
         //Exit runtime
