@@ -21,7 +21,12 @@ public class SecondTest extends BrowserStackTestNGTest {
 
         // Remove the banner at the bottom and enter iphonex into the search bar
 
-        driver.findElement(By.cssSelector("#sp-cc-accept")).click();
+        try {
+            driver.findElement(By.cssSelector("#sp-cc-accept")).click();
+        } catch (NoSuchElementException e){
+            System.out.println("No Cookie bar");
+        }
+
         driver.findElement(By.cssSelector("input#twotabsearchtextbox")).sendKeys("iPhone X", Keys.ENTER);
 
         // Select iOS

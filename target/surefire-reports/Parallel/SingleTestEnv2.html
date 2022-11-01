@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Tue Nov 01 15:51:05 GMT 2022</td>
+<td>Started on:</td><td>Tue Nov 01 15:56:56 GMT 2022</td>
 </tr>
-<tr><td>Total time:</td><td>12 seconds (12358 ms)</td>
+<tr><td>Total time:</td><td>15 seconds (15763 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,39 +76,39 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='com.browserstack.SecondTest.test()'><b>test</b><br>Test class: com.browserstack.SecondTest</td>
-<td><div><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: #sp-cc-accept
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+<td><div><pre>org.openqa.selenium.ElementClickInterceptedException: Element &lt;select id=&quot;s-result-sort-select&quot; class=&quot;a-native-dropdown a-declarative&quot; name=&quot;s&quot;&gt; is not clickable at point (1634,153) because another element &lt;span class=&quot;a-dropdown-prompt&quot;&gt; obscures it
 Build info: version: &apos;4.1.0&apos;, revision: &apos;87802e897b&apos;
 System info: host: &apos;Cormac*con-PQ2FTJX76V&apos;, ip: &apos;fe80:0:0:0:ce2:abf4:e9b1:ada3%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;11.5&apos;, java.version: &apos;11.0.12&apos;
 Driver info: org.openqa.selenium.remote.RemoteWebDriver
-Command: [251467e497d91eeafe3e8d79028bc01281cfa1d0, findElement {using=css selector, value=#sp-cc-accept}]
-Capabilities {acceptInsecureCerts: false, browserName: firefox, browserVersion: 106.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20221010110315, moz:geckodriverVersion: 0.32.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 10708, moz:profile: C:\Windows\proxy\rust_mozpr..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webdriver.remote.sessionid: 251467e497d91eeafe3e8d79028...}
-Session ID: 251467e497d91eeafe3e8d79028bc01281cfa1d0
+Command: [1ff23a7603eacc4ae748e6ca2de33d26e364b2b9, clickElement {id=072a403a-65ad-46c8-b893-1cb0a62faad7}]
+Capabilities {acceptInsecureCerts: false, browserName: firefox, browserVersion: 106.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20221010110315, moz:geckodriverVersion: 0.32.0, moz:headless: false, moz:platformVersion: 6.1, moz:processID: 4884, moz:profile: C:\Windows\proxy\rust_mozpr..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webdriver.remote.sessionid: 1ff23a7603eacc4ae748e6ca2de...}
+Element: [[[[RemoteWebDriver: firefox on WINDOWS (1ff23a7603eacc4ae748e6ca2de33d26e364b2b9)] -&gt; css selector: select#s-result-sort-select]] -&gt; xpath: .//option[normalize-space(.) = &quot;Price: High to Low&quot;]]
+Session ID: 1ff23a7603eacc4ae748e6ca2de33d26e364b2b9
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
 	at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:50)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:383)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:375)
-	at com.browserstack.SecondTest.test(SecondTest.java:25)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at org.openqa.selenium.support.ui.Select.setSelected(Select.java:315)
+	at org.openqa.selenium.support.ui.Select.selectByVisibleText(Select.java:117)
+	at com.browserstack.SecondTest.test(SecondTest.java:37)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
 	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
 	at java.base/java.lang.Thread.run(Thread.java:829)
-... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace460322391", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace460322391'><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: #sp-cc-accept
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1916893937", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1916893937'><pre>org.openqa.selenium.ElementClickInterceptedException: Element &lt;select id=&quot;s-result-sort-select&quot; class=&quot;a-native-dropdown a-declarative&quot; name=&quot;s&quot;&gt; is not clickable at point (1634,153) because another element &lt;span class=&quot;a-dropdown-prompt&quot;&gt; obscures it
 Build info: version: &apos;4.1.0&apos;, revision: &apos;87802e897b&apos;
 System info: host: &apos;Cormac*con-PQ2FTJX76V&apos;, ip: &apos;fe80:0:0:0:ce2:abf4:e9b1:ada3%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;11.5&apos;, java.version: &apos;11.0.12&apos;
 Driver info: org.openqa.selenium.remote.RemoteWebDriver
-Command: [251467e497d91eeafe3e8d79028bc01281cfa1d0, findElement {using=css selector, value=#sp-cc-accept}]
-Capabilities {acceptInsecureCerts: false, browserName: firefox, browserVersion: 106.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20221010110315, moz:geckodriverVersion: 0.32.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 10708, moz:profile: C:\Windows\proxy\rust_mozpr..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webdriver.remote.sessionid: 251467e497d91eeafe3e8d79028...}
-Session ID: 251467e497d91eeafe3e8d79028bc01281cfa1d0
+Command: [1ff23a7603eacc4ae748e6ca2de33d26e364b2b9, clickElement {id=072a403a-65ad-46c8-b893-1cb0a62faad7}]
+Capabilities {acceptInsecureCerts: false, browserName: firefox, browserVersion: 106.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20221010110315, moz:geckodriverVersion: 0.32.0, moz:headless: false, moz:platformVersion: 6.1, moz:processID: 4884, moz:profile: C:\Windows\proxy\rust_mozpr..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webdriver.remote.sessionid: 1ff23a7603eacc4ae748e6ca2de...}
+Element: [[[[RemoteWebDriver: firefox on WINDOWS (1ff23a7603eacc4ae748e6ca2de33d26e364b2b9)] -&gt; css selector: select#s-result-sort-select]] -&gt; xpath: .//option[normalize-space(.) = &quot;Price: High to Low&quot;]]
+Session ID: 1ff23a7603eacc4ae748e6ca2de33d26e364b2b9
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -119,11 +119,11 @@ Session ID: 251467e497d91eeafe3e8d79028bc01281cfa1d0
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
 	at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:50)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:383)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:375)
-	at com.browserstack.SecondTest.test(SecondTest.java:25)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at org.openqa.selenium.support.ui.Select.setSelected(Select.java:315)
+	at org.openqa.selenium.support.ui.Select.selectByVisibleText(Select.java:117)
+	at com.browserstack.SecondTest.test(SecondTest.java:37)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -148,7 +148,7 @@ Session ID: 251467e497d91eeafe3e8d79028bc01281cfa1d0
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
 	at java.base/java.lang.Thread.run(Thread.java:829)
 </pre></div></td>
-<td>0</td>
+<td>5</td>
 <td>com.browserstack.SecondTest@5b94b04d</td></tr>
 </table><p>
 </body>

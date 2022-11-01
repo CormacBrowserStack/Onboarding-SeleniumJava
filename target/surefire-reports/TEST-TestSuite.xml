@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="TestSuite" time="0.194" tests="4" errors="0" skipped="0" failures="4">
+<testsuite name="TestSuite" time="2.4" tests="4" errors="0" skipped="0" failures="2">
   <properties>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
     <property name="java.vm.version" value="11.0.12+7"/>
@@ -60,16 +60,15 @@
     <property name="java.vendor.version" value="Microsoft-25199"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase name="test" classname="com.browserstack.SecondTest" time="0.194">
-    <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#sp-cc-accept&quot;}&#10;  (Session info: chrome=107.0.5304.63)&#10;For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element&#10;Build info: version: &apos;4.1.0&apos;, revision: &apos;87802e897b&apos;&#10;System info: host: &apos;Cormac*con-PQ2FTJX76V&apos;, ip: &apos;fe80:0:0:0:ce2:abf4:e9b1:ada3%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;11.5&apos;, java.version: &apos;11.0.12&apos;&#10;Driver info: org.openqa.selenium.remote.RemoteWebDriver&#10;Command: [742b9522734f99f4b11364639c618feac0342ae5, findElement {using=css selector, value=#sp-cc-accept}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.63, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Windows\proxy\scoped_dir...}, goog:chromeOptions: {debuggerAddress: localhost:7184}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: 742b9522734f99f4b11364639c6...}&#10;Session ID: 742b9522734f99f4b11364639c618feac0342ae5" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#sp-cc-accept"}
-  (Session info: chrome=107.0.5304.63)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+  <testcase name="test" classname="com.browserstack.SecondTest" time="2.4">
+    <failure message="Element &lt;select id=&quot;s-result-sort-select&quot; class=&quot;a-native-dropdown a-declarative&quot; name=&quot;s&quot;&gt; is not clickable at point (1634,153) because another element &lt;span class=&quot;a-dropdown-prompt&quot;&gt; obscures it&#10;Build info: version: &apos;4.1.0&apos;, revision: &apos;87802e897b&apos;&#10;System info: host: &apos;Cormac*con-PQ2FTJX76V&apos;, ip: &apos;fe80:0:0:0:ce2:abf4:e9b1:ada3%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;11.5&apos;, java.version: &apos;11.0.12&apos;&#10;Driver info: org.openqa.selenium.remote.RemoteWebDriver&#10;Command: [1ff23a7603eacc4ae748e6ca2de33d26e364b2b9, clickElement {id=072a403a-65ad-46c8-b893-1cb0a62faad7}]&#10;Capabilities {acceptInsecureCerts: false, browserName: firefox, browserVersion: 106.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20221010110315, moz:geckodriverVersion: 0.32.0, moz:headless: false, moz:platformVersion: 6.1, moz:processID: 4884, moz:profile: C:\Windows\proxy\rust_mozpr..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webdriver.remote.sessionid: 1ff23a7603eacc4ae748e6ca2de...}&#10;Element: [[[[RemoteWebDriver: firefox on WINDOWS (1ff23a7603eacc4ae748e6ca2de33d26e364b2b9)] -&gt; css selector: select#s-result-sort-select]] -&gt; xpath: .//option[normalize-space(.) = &quot;Price: High to Low&quot;]]&#10;Session ID: 1ff23a7603eacc4ae748e6ca2de33d26e364b2b9" type="org.openqa.selenium.ElementClickInterceptedException"><![CDATA[org.openqa.selenium.ElementClickInterceptedException: Element <select id="s-result-sort-select" class="a-native-dropdown a-declarative" name="s"> is not clickable at point (1634,153) because another element <span class="a-dropdown-prompt"> obscures it
 Build info: version: '4.1.0', revision: '87802e897b'
 System info: host: 'Cormac*con-PQ2FTJX76V', ip: 'fe80:0:0:0:ce2:abf4:e9b1:ada3%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '11.5', java.version: '11.0.12'
 Driver info: org.openqa.selenium.remote.RemoteWebDriver
-Command: [742b9522734f99f4b11364639c618feac0342ae5, findElement {using=css selector, value=#sp-cc-accept}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.63, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Windows\proxy\scoped_dir...}, goog:chromeOptions: {debuggerAddress: localhost:7184}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: 742b9522734f99f4b11364639c6...}
-Session ID: 742b9522734f99f4b11364639c618feac0342ae5
+Command: [1ff23a7603eacc4ae748e6ca2de33d26e364b2b9, clickElement {id=072a403a-65ad-46c8-b893-1cb0a62faad7}]
+Capabilities {acceptInsecureCerts: false, browserName: firefox, browserVersion: 106.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20221010110315, moz:geckodriverVersion: 0.32.0, moz:headless: false, moz:platformVersion: 6.1, moz:processID: 4884, moz:profile: C:\Windows\proxy\rust_mozpr..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webdriver.remote.sessionid: 1ff23a7603eacc4ae748e6ca2de...}
+Element: [[[[RemoteWebDriver: firefox on WINDOWS (1ff23a7603eacc4ae748e6ca2de33d26e364b2b9)] -> css selector: select#s-result-sort-select]] -> xpath: .//option[normalize-space(.) = "Price: High to Low"]]
+Session ID: 1ff23a7603eacc4ae748e6ca2de33d26e364b2b9
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -80,30 +79,37 @@ Session ID: 742b9522734f99f4b11364639c618feac0342ae5
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
 	at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:50)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:383)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:375)
-	at com.browserstack.SecondTest.test(SecondTest.java:25)
-</failure>
-    <system-err><![CDATA[Nov 01, 2022 3:51:06 P.M. org.openqa.selenium.remote.tracing.opentelemetry.OpenTelemetryTracer createTracer
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at org.openqa.selenium.support.ui.Select.setSelected(Select.java:315)
+	at org.openqa.selenium.support.ui.Select.selectByVisibleText(Select.java:117)
+	at com.browserstack.SecondTest.test(SecondTest.java:37)
+]]></failure>
+    <system-err><![CDATA[Nov 01, 2022 3:56:56 P.M. org.openqa.selenium.remote.tracing.opentelemetry.OpenTelemetryTracer createTracer
 INFO: Using OpenTelemetry for tracing
 SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
 SLF4J: Defaulting to no-operation (NOP) logger implementation
 SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
-Nov 01, 2022 3:51:11 P.M. org.openqa.selenium.remote.ProtocolHandshake createSession
+Nov 01, 2022 3:57:01 P.M. org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Nov 01, 2022 3:57:02 P.M. org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Nov 01, 2022 3:57:05 P.M. org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Nov 01, 2022 3:57:08 P.M. org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
 ]]></system-err>
   </testcase>
-  <testcase name="test" classname="com.browserstack.SecondTest" time="0.578">
-    <failure message="Unable to locate element: #sp-cc-accept&#10;For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element&#10;Build info: version: &apos;4.1.0&apos;, revision: &apos;87802e897b&apos;&#10;System info: host: &apos;Cormac*con-PQ2FTJX76V&apos;, ip: &apos;fe80:0:0:0:ce2:abf4:e9b1:ada3%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;11.5&apos;, java.version: &apos;11.0.12&apos;&#10;Driver info: org.openqa.selenium.remote.RemoteWebDriver&#10;Command: [251467e497d91eeafe3e8d79028bc01281cfa1d0, findElement {using=css selector, value=#sp-cc-accept}]&#10;Capabilities {acceptInsecureCerts: false, browserName: firefox, browserVersion: 106.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20221010110315, moz:geckodriverVersion: 0.32.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 10708, moz:profile: C:\Windows\proxy\rust_mozpr..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webdriver.remote.sessionid: 251467e497d91eeafe3e8d79028...}&#10;Session ID: 251467e497d91eeafe3e8d79028bc01281cfa1d0" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: Unable to locate element: #sp-cc-accept
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+  <testcase name="test" classname="com.browserstack.SecondTest" time="10.528">
+    <failure message="A node reference could not be resolved: Node with identifier &apos;node-44F1B240-641D-43EC-8395-EDB33BB1BF74&apos; was not found&#10;For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference&#10;Build info: version: &apos;4.1.0&apos;, revision: &apos;87802e897b&apos;&#10;System info: host: &apos;Cormac*con-PQ2FTJX76V&apos;, ip: &apos;fe80:0:0:0:ce2:abf4:e9b1:ada3%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;11.5&apos;, java.version: &apos;11.0.12&apos;&#10;Driver info: org.openqa.selenium.remote.RemoteWebDriver&#10;Command: [f7bbe472279218f03d092b6c91d8ae6714ed41ca, getElementDomAttribute {id=node-44F1B240-641D-43EC-8395-EDB33BB1BF74, name=multiple}]&#10;Capabilities {acceptInsecureCerts: false, browserName: Safari, browserVersion: 15.6.1, javascriptEnabled: true, platform: MAC, platformName: MAC, safari:automaticInspection: false, safari:automaticProfiling: false, safari:diagnose: false, safari:platformBuildVersion: 21G83, safari:platformVersion: 12.5.1, safari:useSimulator: false, setWindowRect: true, strictFileInteractability: false, webdriver.remote.sessionid: f7bbe472279218f03d092b6c91d..., webkit:WebRTC: {DisableICECandidateFiltering: false, DisableInsecureMediaCapture: false}}&#10;Element: [[RemoteWebDriver: Safari on MAC (f7bbe472279218f03d092b6c91d8ae6714ed41ca)] -&gt; css selector: select#s-result-sort-select]&#10;Session ID: f7bbe472279218f03d092b6c91d8ae6714ed41ca" type="org.openqa.selenium.StaleElementReferenceException"><![CDATA[org.openqa.selenium.StaleElementReferenceException: A node reference could not be resolved: Node with identifier 'node-44F1B240-641D-43EC-8395-EDB33BB1BF74' was not found
+For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference
 Build info: version: '4.1.0', revision: '87802e897b'
 System info: host: 'Cormac*con-PQ2FTJX76V', ip: 'fe80:0:0:0:ce2:abf4:e9b1:ada3%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '11.5', java.version: '11.0.12'
 Driver info: org.openqa.selenium.remote.RemoteWebDriver
-Command: [251467e497d91eeafe3e8d79028bc01281cfa1d0, findElement {using=css selector, value=#sp-cc-accept}]
-Capabilities {acceptInsecureCerts: false, browserName: firefox, browserVersion: 106.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20221010110315, moz:geckodriverVersion: 0.32.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 10708, moz:profile: C:\Windows\proxy\rust_mozpr..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webdriver.remote.sessionid: 251467e497d91eeafe3e8d79028...}
-Session ID: 251467e497d91eeafe3e8d79028bc01281cfa1d0
+Command: [f7bbe472279218f03d092b6c91d8ae6714ed41ca, getElementDomAttribute {id=node-44F1B240-641D-43EC-8395-EDB33BB1BF74, name=multiple}]
+Capabilities {acceptInsecureCerts: false, browserName: Safari, browserVersion: 15.6.1, javascriptEnabled: true, platform: MAC, platformName: MAC, safari:automaticInspection: false, safari:automaticProfiling: false, safari:diagnose: false, safari:platformBuildVersion: 21G83, safari:platformVersion: 12.5.1, safari:useSimulator: false, setWindowRect: true, strictFileInteractability: false, webdriver.remote.sessionid: f7bbe472279218f03d092b6c91d..., webkit:WebRTC: {DisableICECandidateFiltering: false, DisableInsecureMediaCapture: false}}
+Element: [[RemoteWebDriver: Safari on MAC (f7bbe472279218f03d092b6c91d8ae6714ed41ca)] -> css selector: select#s-result-sort-select]
+Session ID: f7bbe472279218f03d092b6c91d8ae6714ed41ca
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -114,72 +120,25 @@ Session ID: 251467e497d91eeafe3e8d79028bc01281cfa1d0
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
 	at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:50)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:383)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:375)
-	at com.browserstack.SecondTest.test(SecondTest.java:25)
-</failure>
-    <system-err><![CDATA[Nov 01, 2022 3:51:16 P.M. org.openqa.selenium.remote.ProtocolHandshake createSession
-INFO: Detected dialect: W3C
-]]></system-err>
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)
+	at org.openqa.selenium.remote.RemoteWebElement.getDomAttribute(RemoteWebElement.java:145)
+	at org.openqa.selenium.support.ui.Select.<init>(Select.java:54)
+	at com.browserstack.SecondTest.test(SecondTest.java:36)
+]]></failure>
+    <system-out><![CDATA[Apple iPhone 12 Pro Max, 128GB, Pacific Blue (Renewed)
+£879.99
+https://www.amazon.co.uk/Apple-iPhone-128GB-Pacific-Blue/dp/B08PCCKHJM/ref=sr_1_4?keywords=iPhone+X&qid=1667318228&qu=eyJxc2MiOiI0LjIwIiwicXNhIjoiMy45OCIsInFzcCI6IjMuMzAifQ%3D%3D&refinements=p_n_operating_system_browse-bin%3A909011031&rnid=909008031&s=telephone&sr=1-4
+Apple iPhone 12, 256GB, (Product)Red (Renewed)
+£629.95
+https://www.amazon.co.uk/Apple-iPhone-256GB-Product-Red/dp/B08PCFMXN4/ref=sr_1_15?keywords=iPhone+X&qid=1667318228&qu=eyJxc2MiOiI0LjIwIiwicXNhIjoiMy45OCIsInFzcCI6IjMuMzAifQ%3D%3D&refinements=p_n_operating_system_browse-bin%3A909011031&rnid=909008031&s=telephone&sr=1-15
+Apple iPhone 12 Pro Max, 128GB, Pacific Blue (Renewed)
+£879.99
+https://www.amazon.co.uk/Apple-iPhone-128GB-Pacific-Blue/dp/B08PCCKHJM/ref=sr_1_4?crid=2YL5LASD3L9NB&keywords=iPhone+X&qid=1667318231&qu=eyJxc2MiOiI0LjIwIiwicXNhIjoiMy45OCIsInFzcCI6IjMuMzAifQ%3D%3D&refinements=p_n_operating_system_browse-bin%3A909011031&rnid=909008031&s=telephone&sprefix=%2Caps%2C46&sr=1-4
+Apple iPhone 11, 128GB, Black (Renewed)
+£329.99
+https://www.amazon.co.uk/Apple-iPhone-128GB-Black-Renewed/dp/B082BHJ9G8/ref=sr_1_21?keywords=iPhone+X&qid=1667318228&qu=eyJxc2MiOiI0LjIwIiwicXNhIjoiMy45OCIsInFzcCI6IjMuMzAifQ%3D%3D&refinements=p_n_operating_system_browse-bin%3A909011031&rnid=909008031&s=telephone&sr=1-21
+]]></system-out>
   </testcase>
-  <testcase name="test" classname="com.browserstack.SecondTest" time="0.248">
-    <failure message="For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element&#10;Build info: version: &apos;4.1.0&apos;, revision: &apos;87802e897b&apos;&#10;System info: host: &apos;Cormac*con-PQ2FTJX76V&apos;, ip: &apos;fe80:0:0:0:ce2:abf4:e9b1:ada3%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;11.5&apos;, java.version: &apos;11.0.12&apos;&#10;Driver info: org.openqa.selenium.remote.RemoteWebDriver&#10;Command: [4101cc9880c7c5e8cea9421d50b425067337190d, findElement {using=css selector, value=#sp-cc-accept}]&#10;Capabilities {acceptInsecureCerts: false, browserName: Safari, browserVersion: 15.6.1, javascriptEnabled: true, platform: MAC, platformName: MAC, safari:automaticInspection: false, safari:automaticProfiling: false, safari:diagnose: false, safari:platformBuildVersion: 21G83, safari:platformVersion: 12.5.1, safari:useSimulator: false, setWindowRect: true, strictFileInteractability: false, webdriver.remote.sessionid: 4101cc9880c7c5e8cea9421d50b..., webkit:WebRTC: {DisableICECandidateFiltering: false, DisableInsecureMediaCapture: false}}&#10;Session ID: 4101cc9880c7c5e8cea9421d50b425067337190d" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: '4.1.0', revision: '87802e897b'
-System info: host: 'Cormac*con-PQ2FTJX76V', ip: 'fe80:0:0:0:ce2:abf4:e9b1:ada3%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '11.5', java.version: '11.0.12'
-Driver info: org.openqa.selenium.remote.RemoteWebDriver
-Command: [4101cc9880c7c5e8cea9421d50b425067337190d, findElement {using=css selector, value=#sp-cc-accept}]
-Capabilities {acceptInsecureCerts: false, browserName: Safari, browserVersion: 15.6.1, javascriptEnabled: true, platform: MAC, platformName: MAC, safari:automaticInspection: false, safari:automaticProfiling: false, safari:diagnose: false, safari:platformBuildVersion: 21G83, safari:platformVersion: 12.5.1, safari:useSimulator: false, setWindowRect: true, strictFileInteractability: false, webdriver.remote.sessionid: 4101cc9880c7c5e8cea9421d50b..., webkit:WebRTC: {DisableICECandidateFiltering: false, DisableInsecureMediaCapture: false}}
-Session ID: 4101cc9880c7c5e8cea9421d50b425067337190d
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:50)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:383)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:375)
-	at com.browserstack.SecondTest.test(SecondTest.java:25)
-</failure>
-    <system-err><![CDATA[Nov 01, 2022 3:51:17 P.M. org.openqa.selenium.remote.ProtocolHandshake createSession
-INFO: Detected dialect: W3C
-]]></system-err>
-  </testcase>
-  <testcase name="test" classname="com.browserstack.SecondTest" time="0.124">
-    <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#sp-cc-accept&quot;}&#10;  (Session info: MicrosoftEdge=106.0.1370.37)&#10;For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element&#10;Build info: version: &apos;4.1.0&apos;, revision: &apos;87802e897b&apos;&#10;System info: host: &apos;Cormac*con-PQ2FTJX76V&apos;, ip: &apos;fe80:0:0:0:ce2:abf4:e9b1:ada3%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;11.5&apos;, java.version: &apos;11.0.12&apos;&#10;Driver info: org.openqa.selenium.remote.RemoteWebDriver&#10;Command: [efb0e88444fcd8c11d1b489f2c3128fefa5f196a, findElement {using=css selector, value=#sp-cc-accept}]&#10;Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 106.0.1370.37, javascriptEnabled: true, ms:edgeOptions: {debuggerAddress: localhost:7605}, msedge: {msedgedriverVersion: 106.0.1370.37 (7c71c663052f..., userDataDir: C:\Windows\proxy\scoped_dir...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: efb0e88444fcd8c11d1b489f2c3...}&#10;Session ID: efb0e88444fcd8c11d1b489f2c3128fefa5f196a" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#sp-cc-accept"}
-  (Session info: MicrosoftEdge=106.0.1370.37)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: '4.1.0', revision: '87802e897b'
-System info: host: 'Cormac*con-PQ2FTJX76V', ip: 'fe80:0:0:0:ce2:abf4:e9b1:ada3%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '11.5', java.version: '11.0.12'
-Driver info: org.openqa.selenium.remote.RemoteWebDriver
-Command: [efb0e88444fcd8c11d1b489f2c3128fefa5f196a, findElement {using=css selector, value=#sp-cc-accept}]
-Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 106.0.1370.37, javascriptEnabled: true, ms:edgeOptions: {debuggerAddress: localhost:7605}, msedge: {msedgedriverVersion: 106.0.1370.37 (7c71c663052f..., userDataDir: C:\Windows\proxy\scoped_dir...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: efb0e88444fcd8c11d1b489f2c3...}
-Session ID: efb0e88444fcd8c11d1b489f2c3128fefa5f196a
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:50)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:383)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:375)
-	at com.browserstack.SecondTest.test(SecondTest.java:25)
-</failure>
-    <system-err><![CDATA[Nov 01, 2022 3:51:28 P.M. org.openqa.selenium.remote.ProtocolHandshake createSession
-INFO: Detected dialect: W3C
-]]></system-err>
-  </testcase>
+  <testcase name="test" classname="com.browserstack.SecondTest" time="13.222"/>
+  <testcase name="test" classname="com.browserstack.SecondTest" time="17.068"/>
 </testsuite>
