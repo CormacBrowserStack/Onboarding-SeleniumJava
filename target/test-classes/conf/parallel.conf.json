@@ -5,8 +5,8 @@
 
   "capabilities": {
     "bstack:options": {
-      "buildName": "browserstack-build-1",
-      "sessionName": "BStack parallel testng",
+      "buildName": "BrowserStack 2",
+      "sessionName": "Cormac Amazon Build",
       "browserVersion": "latest",
       "debug": true
     }
