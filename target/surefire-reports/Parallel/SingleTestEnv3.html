@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Tue Nov 01 12:07:12 GMT 2022</td>
+<td>Started on:</td><td>Tue Nov 01 15:51:05 GMT 2022</td>
 </tr>
-<tr><td>Total time:</td><td>21 seconds (21101 ms)</td>
+<tr><td>Total time:</td><td>13 seconds (13075 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,37 +76,37 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='com.browserstack.SecondTest.test()'><b>test</b><br>Test class: com.browserstack.SecondTest</td>
-<td><div><pre>org.openqa.selenium.WebDriverException: Build info: version: &apos;4.1.0&apos;, revision: &apos;87802e897b&apos;
+<td><div><pre>org.openqa.selenium.NoSuchElementException: For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.1.0&apos;, revision: &apos;87802e897b&apos;
 System info: host: &apos;Cormac*con-PQ2FTJX76V&apos;, ip: &apos;fe80:0:0:0:ce2:abf4:e9b1:ada3%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;11.5&apos;, java.version: &apos;11.0.12&apos;
 Driver info: org.openqa.selenium.remote.RemoteWebDriver
-Command: [43790ae81bb59b16f83bfe01937ce016bd75dadd, clickElement {id=node-E17F0F38-64DA-445D-8C80-6185A7147847}]
-Capabilities {acceptInsecureCerts: false, browserName: Safari, browserVersion: 15.6.1, javascriptEnabled: true, platform: MAC, platformName: MAC, safari:automaticInspection: false, safari:automaticProfiling: false, safari:diagnose: false, safari:platformBuildVersion: 21G83, safari:platformVersion: 12.5.1, safari:useSimulator: false, setWindowRect: true, strictFileInteractability: false, webdriver.remote.sessionid: 43790ae81bb59b16f83bfe01937..., webkit:WebRTC: {DisableICECandidateFiltering: false, DisableInsecureMediaCapture: false}}
-Element: [[[[RemoteWebDriver: Safari on MAC (43790ae81bb59b16f83bfe01937ce016bd75dadd)] -&gt; css selector: select#s-result-sort-select]] -&gt; xpath: .//option[normalize-space(.) = &quot;Price: High to Low&quot;]]
-Session ID: 43790ae81bb59b16f83bfe01937ce016bd75dadd
+Command: [4101cc9880c7c5e8cea9421d50b425067337190d, findElement {using=css selector, value=#sp-cc-accept}]
+Capabilities {acceptInsecureCerts: false, browserName: Safari, browserVersion: 15.6.1, javascriptEnabled: true, platform: MAC, platformName: MAC, safari:automaticInspection: false, safari:automaticProfiling: false, safari:diagnose: false, safari:platformBuildVersion: 21G83, safari:platformVersion: 12.5.1, safari:useSimulator: false, setWindowRect: true, strictFileInteractability: false, webdriver.remote.sessionid: 4101cc9880c7c5e8cea9421d50b..., webkit:WebRTC: {DisableICECandidateFiltering: false, DisableInsecureMediaCapture: false}}
+Session ID: 4101cc9880c7c5e8cea9421d50b425067337190d
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
 	at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:50)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
-	at org.openqa.selenium.support.ui.Select.setSelected(Select.java:315)
-	at org.openqa.selenium.support.ui.Select.selectByVisibleText(Select.java:117)
-	at com.browserstack.SecondTest.test(SecondTest.java:36)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:383)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:375)
+	at com.browserstack.SecondTest.test(SecondTest.java:25)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
 	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
 	at java.base/java.lang.Thread.run(Thread.java:829)
-... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1715373857", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1715373857'><pre>org.openqa.selenium.WebDriverException: Build info: version: &apos;4.1.0&apos;, revision: &apos;87802e897b&apos;
+... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace198911699", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace198911699'><pre>org.openqa.selenium.NoSuchElementException: For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.1.0&apos;, revision: &apos;87802e897b&apos;
 System info: host: &apos;Cormac*con-PQ2FTJX76V&apos;, ip: &apos;fe80:0:0:0:ce2:abf4:e9b1:ada3%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;11.5&apos;, java.version: &apos;11.0.12&apos;
 Driver info: org.openqa.selenium.remote.RemoteWebDriver
-Command: [43790ae81bb59b16f83bfe01937ce016bd75dadd, clickElement {id=node-E17F0F38-64DA-445D-8C80-6185A7147847}]
-Capabilities {acceptInsecureCerts: false, browserName: Safari, browserVersion: 15.6.1, javascriptEnabled: true, platform: MAC, platformName: MAC, safari:automaticInspection: false, safari:automaticProfiling: false, safari:diagnose: false, safari:platformBuildVersion: 21G83, safari:platformVersion: 12.5.1, safari:useSimulator: false, setWindowRect: true, strictFileInteractability: false, webdriver.remote.sessionid: 43790ae81bb59b16f83bfe01937..., webkit:WebRTC: {DisableICECandidateFiltering: false, DisableInsecureMediaCapture: false}}
-Element: [[[[RemoteWebDriver: Safari on MAC (43790ae81bb59b16f83bfe01937ce016bd75dadd)] -&gt; css selector: select#s-result-sort-select]] -&gt; xpath: .//option[normalize-space(.) = &quot;Price: High to Low&quot;]]
-Session ID: 43790ae81bb59b16f83bfe01937ce016bd75dadd
+Command: [4101cc9880c7c5e8cea9421d50b425067337190d, findElement {using=css selector, value=#sp-cc-accept}]
+Capabilities {acceptInsecureCerts: false, browserName: Safari, browserVersion: 15.6.1, javascriptEnabled: true, platform: MAC, platformName: MAC, safari:automaticInspection: false, safari:automaticProfiling: false, safari:diagnose: false, safari:platformBuildVersion: 21G83, safari:platformVersion: 12.5.1, safari:useSimulator: false, setWindowRect: true, strictFileInteractability: false, webdriver.remote.sessionid: 4101cc9880c7c5e8cea9421d50b..., webkit:WebRTC: {DisableICECandidateFiltering: false, DisableInsecureMediaCapture: false}}
+Session ID: 4101cc9880c7c5e8cea9421d50b425067337190d
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -117,11 +117,11 @@ Session ID: 43790ae81bb59b16f83bfe01937ce016bd75dadd
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
 	at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:50)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
-	at org.openqa.selenium.support.ui.Select.setSelected(Select.java:315)
-	at org.openqa.selenium.support.ui.Select.selectByVisibleText(Select.java:117)
-	at com.browserstack.SecondTest.test(SecondTest.java:36)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:383)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:375)
+	at com.browserstack.SecondTest.test(SecondTest.java:25)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -146,8 +146,8 @@ Session ID: 43790ae81bb59b16f83bfe01937ce016bd75dadd
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
 	at java.base/java.lang.Thread.run(Thread.java:829)
 </pre></div></td>
-<td>10</td>
-<td>com.browserstack.SecondTest@291caca8</td></tr>
+<td>0</td>
+<td>com.browserstack.SecondTest@7ee8290b</td></tr>
 </table><p>
 </body>
 </html>

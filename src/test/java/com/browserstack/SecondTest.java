@@ -15,10 +15,9 @@ public class SecondTest extends BrowserStackTestNGTest {
 //        System.setProperty("webdriver.chrome.driver", "/Users/cormac/Documents/Resources/Drivers/chromedriver");
 //
 //        WebDriver driver = new ChromeDriver();
-//        //Amazon
-//        driver.manage().window().maximize();
-//        driver.get("https://www.amazon.co.uk/");
-//        Thread.sleep(2000);
+        //Expand window and go to Amazon
+        driver.manage().window().maximize();
+        driver.get("https://www.amazon.co.uk/");
 
         // Remove the banner at the bottom and enter iphonex into the search bar
 

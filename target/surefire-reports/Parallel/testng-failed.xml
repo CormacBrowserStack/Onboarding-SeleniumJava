@@ -1,19 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite thread-count="4" parallel="tests" name="Failed suite [Parallel]" guice-stage="DEVELOPMENT" verbose="0">
-  <test thread-count="4" parallel="tests" name="SingleTestEnv3(failed)" verbose="0">
-    <parameter name="environment" value="env3"/>
-    <parameter name="config" value="parallel.conf.json"/>
-    <classes>
-      <class name="com.browserstack.SecondTest">
-        <methods>
-          <include name="test"/>
-          <include name="setUp"/>
-          <include name="tearDown"/>
-        </methods>
-      </class> <!-- com.browserstack.SecondTest -->
-    </classes>
-  </test> <!-- SingleTestEnv3(failed) -->
   <test thread-count="4" parallel="tests" name="SingleTestEnv1(failed)" verbose="0">
     <parameter name="environment" value="env1"/>
     <parameter name="config" value="parallel.conf.json"/>
@@ -40,6 +27,19 @@
       </class> <!-- com.browserstack.SecondTest -->
     </classes>
   </test> <!-- SingleTestEnv2(failed) -->
+  <test thread-count="4" parallel="tests" name="SingleTestEnv3(failed)" verbose="0">
+    <parameter name="environment" value="env3"/>
+    <parameter name="config" value="parallel.conf.json"/>
+    <classes>
+      <class name="com.browserstack.SecondTest">
+        <methods>
+          <include name="test"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.browserstack.SecondTest -->
+    </classes>
+  </test> <!-- SingleTestEnv3(failed) -->
   <test thread-count="4" parallel="tests" name="SingleTestEnv4(failed)" verbose="0">
     <parameter name="environment" value="env4"/>
     <parameter name="config" value="parallel.conf.json"/>
