@@ -1,241 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="2" failed="2" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-11-03T09:28:00 GMT" name="Parallel" finished-at="2022-11-03T09:28:57 GMT" duration-ms="57777">
+  <suite started-at="2022-11-08T11:49:47 GMT" name="Single" finished-at="2022-11-08T11:50:43 GMT" duration-ms="56672">
     <groups>
     </groups>
-    <test started-at="2022-11-03T09:28:00 GMT" name="SingleTestEnv3" finished-at="2022-11-03T09:28:13 GMT" duration-ms="13922">
-      <class name="com.browserstack.SecondTest">
-        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String)[pri:0, instance:com.browserstack.SecondTest@7ee8290b]" started-at="2022-11-03T09:28:00 GMT" name="setUp" finished-at="2022-11-03T09:28:08 GMT" duration-ms="7967" status="PASS">
+    <test started-at="2022-11-08T11:49:47 GMT" name="SingleTest" finished-at="2022-11-08T11:50:43 GMT" duration-ms="56672">
+      <class name="com.browserstack.PercyTest">
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String)[pri:0, instance:com.browserstack.PercyTest@477b4cdf]" started-at="2022-11-08T11:49:47 GMT" name="setUp" finished-at="2022-11-08T11:49:52 GMT" duration-ms="5168" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[parallel.conf.json]]>
+                <![CDATA[single.conf.json]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[env3]]>
+                <![CDATA[chrome]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="test()[pri:0, instance:com.browserstack.SecondTest@7ee8290b]" started-at="2022-11-03T09:28:08 GMT" name="test" finished-at="2022-11-03T09:28:12 GMT" duration-ms="4811" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: '4.1.0', revision: '87802e897b'
-System info: host: 'Cormac*con-PQ2FTJX76V', ip: 'fe80:0:0:0:ce2:abf4:e9b1:ada3%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '11.5', java.version: '11.0.12'
-Driver info: org.openqa.selenium.remote.RemoteWebDriver
-Command: [090ddba2e4283b104221b03000c14d236c1eaf47, findElement {using=css selector, value=ul:nth-of-type(4) > li:nth-of-type(2) .a-icon.a-icon-checkbox}]
-Capabilities {acceptInsecureCerts: false, browserName: Safari, browserVersion: 15.6.1, javascriptEnabled: true, platform: MAC, platformName: MAC, safari:automaticInspection: false, safari:automaticProfiling: false, safari:diagnose: false, safari:platformBuildVersion: 21G83, safari:platformVersion: 12.5.1, safari:useSimulator: false, setWindowRect: true, strictFileInteractability: false, webdriver.remote.sessionid: 090ddba2e4283b104221b03000c..., webkit:WebRTC: {DisableICECandidateFiltering: false, DisableInsecureMediaCapture: false}}
-Session ID: 090ddba2e4283b104221b03000c14d236c1eaf47]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: '4.1.0', revision: '87802e897b'
-System info: host: 'Cormac*con-PQ2FTJX76V', ip: 'fe80:0:0:0:ce2:abf4:e9b1:ada3%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '11.5', java.version: '11.0.12'
-Driver info: org.openqa.selenium.remote.RemoteWebDriver
-Command: [090ddba2e4283b104221b03000c14d236c1eaf47, findElement {using=css selector, value=ul:nth-of-type(4) > li:nth-of-type(2) .a-icon.a-icon-checkbox}]
-Capabilities {acceptInsecureCerts: false, browserName: Safari, browserVersion: 15.6.1, javascriptEnabled: true, platform: MAC, platformName: MAC, safari:automaticInspection: false, safari:automaticProfiling: false, safari:diagnose: false, safari:platformBuildVersion: 21G83, safari:platformVersion: 12.5.1, safari:useSimulator: false, setWindowRect: true, strictFileInteractability: false, webdriver.remote.sessionid: 090ddba2e4283b104221b03000c..., webkit:WebRTC: {DisableICECandidateFiltering: false, DisableInsecureMediaCapture: false}}
-Session ID: 090ddba2e4283b104221b03000c14d236c1eaf47
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:50)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:383)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:375)
-at com.browserstack.SecondTest.test(SecondTest.java:33)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-at java.base/java.lang.Thread.run(Thread.java:829)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+        <test-method signature="test()[pri:0, instance:com.browserstack.PercyTest@477b4cdf]" started-at="2022-11-08T11:49:52 GMT" name="test" finished-at="2022-11-08T11:50:42 GMT" duration-ms="50003" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.browserstack.SecondTest@7ee8290b]" started-at="2022-11-03T09:28:12 GMT" name="tearDown" finished-at="2022-11-03T09:28:13 GMT" duration-ms="997" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.browserstack.PercyTest@477b4cdf]" started-at="2022-11-08T11:50:42 GMT" name="tearDown" finished-at="2022-11-08T11:50:43 GMT" duration-ms="1472" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.browserstack.SecondTest -->
-    </test> <!-- SingleTestEnv3 -->
-    <test started-at="2022-11-03T09:28:00 GMT" name="SingleTestEnv2" finished-at="2022-11-03T09:28:20 GMT" duration-ms="20248">
-      <class name="com.browserstack.SecondTest">
-        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String)[pri:0, instance:com.browserstack.SecondTest@5b94b04d]" started-at="2022-11-03T09:28:00 GMT" name="setUp" finished-at="2022-11-03T09:28:08 GMT" duration-ms="8886" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[parallel.conf.json]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[env2]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="test()[pri:0, instance:com.browserstack.SecondTest@5b94b04d]" started-at="2022-11-03T09:28:08 GMT" name="test" finished-at="2022-11-03T09:28:19 GMT" duration-ms="10296" status="FAIL">
-          <exception class="org.openqa.selenium.ElementClickInterceptedException">
-            <message>
-              <![CDATA[Element <select id="s-result-sort-select" class="a-native-dropdown a-declarative" name="s"> is not clickable at point (1634,153) because another element <span class="a-dropdown-prompt"> obscures it
-Build info: version: '4.1.0', revision: '87802e897b'
-System info: host: 'Cormac*con-PQ2FTJX76V', ip: 'fe80:0:0:0:ce2:abf4:e9b1:ada3%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '11.5', java.version: '11.0.12'
-Driver info: org.openqa.selenium.remote.RemoteWebDriver
-Command: [1c7c871b4f451bf10054245251819316e69fd031, clickElement {id=8e86018c-b5e4-4fa9-9d8b-35b6c9ff59e4}]
-Capabilities {acceptInsecureCerts: false, browserName: firefox, browserVersion: 106.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20221010110315, moz:geckodriverVersion: 0.32.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 8024, moz:profile: C:\Windows\proxy\rust_mozpr..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webdriver.remote.sessionid: 1c7c871b4f451bf100542452518...}
-Element: [[[[RemoteWebDriver: firefox on WINDOWS (1c7c871b4f451bf10054245251819316e69fd031)] -> css selector: select#s-result-sort-select]] -> xpath: .//option[normalize-space(.) = "Price: High to Low"]]
-Session ID: 1c7c871b4f451bf10054245251819316e69fd031]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: Element <select id="s-result-sort-select" class="a-native-dropdown a-declarative" name="s"> is not clickable at point (1634,153) because another element <span class="a-dropdown-prompt"> obscures it
-Build info: version: '4.1.0', revision: '87802e897b'
-System info: host: 'Cormac*con-PQ2FTJX76V', ip: 'fe80:0:0:0:ce2:abf4:e9b1:ada3%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '11.5', java.version: '11.0.12'
-Driver info: org.openqa.selenium.remote.RemoteWebDriver
-Command: [1c7c871b4f451bf10054245251819316e69fd031, clickElement {id=8e86018c-b5e4-4fa9-9d8b-35b6c9ff59e4}]
-Capabilities {acceptInsecureCerts: false, browserName: firefox, browserVersion: 106.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20221010110315, moz:geckodriverVersion: 0.32.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 8024, moz:profile: C:\Windows\proxy\rust_mozpr..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webdriver.remote.sessionid: 1c7c871b4f451bf100542452518...}
-Element: [[[[RemoteWebDriver: firefox on WINDOWS (1c7c871b4f451bf10054245251819316e69fd031)] -> css selector: select#s-result-sort-select]] -> xpath: .//option[normalize-space(.) = "Price: High to Low"]]
-Session ID: 1c7c871b4f451bf10054245251819316e69fd031
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:50)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
-at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)
-at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
-at org.openqa.selenium.support.ui.Select.setSelected(Select.java:315)
-at org.openqa.selenium.support.ui.Select.selectByVisibleText(Select.java:117)
-at com.browserstack.SecondTest.test(SecondTest.java:37)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-at java.base/java.lang.Thread.run(Thread.java:829)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.browserstack.SecondTest@5b94b04d]" started-at="2022-11-03T09:28:19 GMT" name="tearDown" finished-at="2022-11-03T09:28:20 GMT" duration-ms="957" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- com.browserstack.SecondTest -->
-    </test> <!-- SingleTestEnv2 -->
-    <test started-at="2022-11-03T09:28:00 GMT" name="SingleTestEnv1" finished-at="2022-11-03T09:28:48 GMT" duration-ms="48858">
-      <class name="com.browserstack.SecondTest">
-        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String)[pri:0, instance:com.browserstack.SecondTest@31190526]" started-at="2022-11-03T09:28:00 GMT" name="setUp" finished-at="2022-11-03T09:28:06 GMT" duration-ms="6546" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[parallel.conf.json]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[env1]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="test()[pri:0, instance:com.browserstack.SecondTest@31190526]" started-at="2022-11-03T09:28:06 GMT" name="test" finished-at="2022-11-03T09:28:48 GMT" duration-ms="42196" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.browserstack.SecondTest@31190526]" started-at="2022-11-03T09:28:48 GMT" name="tearDown" finished-at="2022-11-03T09:28:48 GMT" duration-ms="4" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- com.browserstack.SecondTest -->
-    </test> <!-- SingleTestEnv1 -->
-    <test started-at="2022-11-03T09:28:00 GMT" name="SingleTestEnv4" finished-at="2022-11-03T09:28:57 GMT" duration-ms="57777">
-      <class name="com.browserstack.SecondTest">
-        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String)[pri:0, instance:com.browserstack.SecondTest@26b3fd41]" started-at="2022-11-03T09:28:00 GMT" name="setUp" finished-at="2022-11-03T09:28:06 GMT" duration-ms="6546" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[parallel.conf.json]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[env4]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="test()[pri:0, instance:com.browserstack.SecondTest@26b3fd41]" started-at="2022-11-03T09:28:06 GMT" name="test" finished-at="2022-11-03T09:28:57 GMT" duration-ms="51116" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.browserstack.SecondTest@26b3fd41]" started-at="2022-11-03T09:28:57 GMT" name="tearDown" finished-at="2022-11-03T09:28:57 GMT" duration-ms="2" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- com.browserstack.SecondTest -->
-    </test> <!-- SingleTestEnv4 -->
-  </suite> <!-- Parallel -->
+      </class> <!-- com.browserstack.PercyTest -->
+    </test> <!-- SingleTest -->
+  </suite> <!-- Single -->
 </testng-results>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="TestSuite" time="3.937" tests="4" errors="0" skipped="0" failures="2">
+<testsuite name="TestSuite" time="50.012" tests="1" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
     <property name="java.vm.version" value="11.0.12+7"/>
@@ -43,7 +43,7 @@
     <property name="java.class.path" value="/opt/homebrew/Cellar/maven/3.8.6/libexec/boot/plexus-classworlds-2.6.0.jar"/>
     <property name="java.vm.specification.version" value="11"/>
     <property name="sun.arch.data.model" value="64"/>
-    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher test -P parallel"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher test -P single"/>
     <property name="java.home" value="/Library/Java/JavaVirtualMachines/microsoft-11.jdk/Contents/Home"/>
     <property name="user.language" value="en"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
@@ -60,71 +60,5 @@
     <property name="java.vendor.version" value="Microsoft-25199"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase name="test" classname="com.browserstack.SecondTest" time="3.937">
-    <failure message="For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element&#10;Build info: version: &apos;4.1.0&apos;, revision: &apos;87802e897b&apos;&#10;System info: host: &apos;Cormac*con-PQ2FTJX76V&apos;, ip: &apos;fe80:0:0:0:ce2:abf4:e9b1:ada3%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;11.5&apos;, java.version: &apos;11.0.12&apos;&#10;Driver info: org.openqa.selenium.remote.RemoteWebDriver&#10;Command: [090ddba2e4283b104221b03000c14d236c1eaf47, findElement {using=css selector, value=ul:nth-of-type(4) &gt; li:nth-of-type(2) .a-icon.a-icon-checkbox}]&#10;Capabilities {acceptInsecureCerts: false, browserName: Safari, browserVersion: 15.6.1, javascriptEnabled: true, platform: MAC, platformName: MAC, safari:automaticInspection: false, safari:automaticProfiling: false, safari:diagnose: false, safari:platformBuildVersion: 21G83, safari:platformVersion: 12.5.1, safari:useSimulator: false, setWindowRect: true, strictFileInteractability: false, webdriver.remote.sessionid: 090ddba2e4283b104221b03000c..., webkit:WebRTC: {DisableICECandidateFiltering: false, DisableInsecureMediaCapture: false}}&#10;Session ID: 090ddba2e4283b104221b03000c14d236c1eaf47" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: '4.1.0', revision: '87802e897b'
-System info: host: 'Cormac*con-PQ2FTJX76V', ip: 'fe80:0:0:0:ce2:abf4:e9b1:ada3%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '11.5', java.version: '11.0.12'
-Driver info: org.openqa.selenium.remote.RemoteWebDriver
-Command: [090ddba2e4283b104221b03000c14d236c1eaf47, findElement {using=css selector, value=ul:nth-of-type(4) > li:nth-of-type(2) .a-icon.a-icon-checkbox}]
-Capabilities {acceptInsecureCerts: false, browserName: Safari, browserVersion: 15.6.1, javascriptEnabled: true, platform: MAC, platformName: MAC, safari:automaticInspection: false, safari:automaticProfiling: false, safari:diagnose: false, safari:platformBuildVersion: 21G83, safari:platformVersion: 12.5.1, safari:useSimulator: false, setWindowRect: true, strictFileInteractability: false, webdriver.remote.sessionid: 090ddba2e4283b104221b03000c..., webkit:WebRTC: {DisableICECandidateFiltering: false, DisableInsecureMediaCapture: false}}
-Session ID: 090ddba2e4283b104221b03000c14d236c1eaf47
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:50)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:383)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:375)
-	at com.browserstack.SecondTest.test(SecondTest.java:33)
-</failure>
-    <system-err><![CDATA[Nov 03, 2022 9:28:00 A.M. org.openqa.selenium.remote.tracing.opentelemetry.OpenTelemetryTracer createTracer
-INFO: Using OpenTelemetry for tracing
-SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
-SLF4J: Defaulting to no-operation (NOP) logger implementation
-SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
-Nov 03, 2022 9:28:06 A.M. org.openqa.selenium.remote.ProtocolHandshake createSession
-INFO: Detected dialect: W3C
-Nov 03, 2022 9:28:06 A.M. org.openqa.selenium.remote.ProtocolHandshake createSession
-INFO: Detected dialect: W3C
-Nov 03, 2022 9:28:08 A.M. org.openqa.selenium.remote.ProtocolHandshake createSession
-INFO: Detected dialect: W3C
-Nov 03, 2022 9:28:08 A.M. org.openqa.selenium.remote.ProtocolHandshake createSession
-INFO: Detected dialect: W3C
-]]></system-err>
-  </testcase>
-  <testcase name="test" classname="com.browserstack.SecondTest" time="10.306">
-    <failure message="Element &lt;select id=&quot;s-result-sort-select&quot; class=&quot;a-native-dropdown a-declarative&quot; name=&quot;s&quot;&gt; is not clickable at point (1634,153) because another element &lt;span class=&quot;a-dropdown-prompt&quot;&gt; obscures it&#10;Build info: version: &apos;4.1.0&apos;, revision: &apos;87802e897b&apos;&#10;System info: host: &apos;Cormac*con-PQ2FTJX76V&apos;, ip: &apos;fe80:0:0:0:ce2:abf4:e9b1:ada3%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;11.5&apos;, java.version: &apos;11.0.12&apos;&#10;Driver info: org.openqa.selenium.remote.RemoteWebDriver&#10;Command: [1c7c871b4f451bf10054245251819316e69fd031, clickElement {id=8e86018c-b5e4-4fa9-9d8b-35b6c9ff59e4}]&#10;Capabilities {acceptInsecureCerts: false, browserName: firefox, browserVersion: 106.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20221010110315, moz:geckodriverVersion: 0.32.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 8024, moz:profile: C:\Windows\proxy\rust_mozpr..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webdriver.remote.sessionid: 1c7c871b4f451bf100542452518...}&#10;Element: [[[[RemoteWebDriver: firefox on WINDOWS (1c7c871b4f451bf10054245251819316e69fd031)] -&gt; css selector: select#s-result-sort-select]] -&gt; xpath: .//option[normalize-space(.) = &quot;Price: High to Low&quot;]]&#10;Session ID: 1c7c871b4f451bf10054245251819316e69fd031" type="org.openqa.selenium.ElementClickInterceptedException"><![CDATA[org.openqa.selenium.ElementClickInterceptedException: Element <select id="s-result-sort-select" class="a-native-dropdown a-declarative" name="s"> is not clickable at point (1634,153) because another element <span class="a-dropdown-prompt"> obscures it
-Build info: version: '4.1.0', revision: '87802e897b'
-System info: host: 'Cormac*con-PQ2FTJX76V', ip: 'fe80:0:0:0:ce2:abf4:e9b1:ada3%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '11.5', java.version: '11.0.12'
-Driver info: org.openqa.selenium.remote.RemoteWebDriver
-Command: [1c7c871b4f451bf10054245251819316e69fd031, clickElement {id=8e86018c-b5e4-4fa9-9d8b-35b6c9ff59e4}]
-Capabilities {acceptInsecureCerts: false, browserName: firefox, browserVersion: 106.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20221010110315, moz:geckodriverVersion: 0.32.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 8024, moz:profile: C:\Windows\proxy\rust_mozpr..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webdriver.remote.sessionid: 1c7c871b4f451bf100542452518...}
-Element: [[[[RemoteWebDriver: firefox on WINDOWS (1c7c871b4f451bf10054245251819316e69fd031)] -> css selector: select#s-result-sort-select]] -> xpath: .//option[normalize-space(.) = "Price: High to Low"]]
-Session ID: 1c7c871b4f451bf10054245251819316e69fd031
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:50)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
-	at org.openqa.selenium.support.ui.Select.setSelected(Select.java:315)
-	at org.openqa.selenium.support.ui.Select.selectByVisibleText(Select.java:117)
-	at com.browserstack.SecondTest.test(SecondTest.java:37)
-]]></failure>
-  </testcase>
-  <testcase name="test" classname="com.browserstack.SecondTest" time="39.863"/>
-  <testcase name="test" classname="com.browserstack.SecondTest" time="48.783"/>
+  <testcase name="test" classname="com.browserstack.PercyTest" time="50.012"/>
 </testsuite>

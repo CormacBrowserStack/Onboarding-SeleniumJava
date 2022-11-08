@@ -6,6 +6,7 @@ com/browserstack/suite/SuiteTest09.class
 com/browserstack/SecondTest.class
 com/browserstack/suite/SuiteTest10.class
 com/browserstack/suite/SuiteTest04.class
+com/browserstack/PercyTest.class
 com/browserstack/suite/SuiteTest05.class
 com/browserstack/suite/SuiteTest06.class
 com/browserstack/suite/SuiteTest03.class
